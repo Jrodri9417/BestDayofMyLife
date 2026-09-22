@@ -11,12 +11,12 @@ using namespace std;
 int main()
 {
     //Open the text file
-    ifstream fin("Best Day of My Life.txt");
+    ifstream fin("Bestday.txt");
 
     //Check if the file opened
     if (fin.is_open() == false)
     {
-        cout << "File was not found\n";
+        cout << "File not found\n";
         return -1;
     }
 
@@ -32,8 +32,8 @@ int main()
 
     fin.close();
 
-    //Reopen the file so we can read it from the beginning
-    fin.open("Best Day of My Life.txt");
+    //Reopen the file and read it from the beginning
+    fin.open("Bestday.txt");
 
     //Read and print ALL lines using a while loop
     cout << "\nAll lines:\n";
